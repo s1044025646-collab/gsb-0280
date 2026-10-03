@@ -1,0 +1,21 @@
+{
+  "name": "rdec",
+  "version": "1.0.0",
+  "description": "有理数循环小数精确展开与循环节定位后端",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsx --test test/*.test.ts",
+    "test:ts": "npx tsx --test test/",
+    "start": "node --no-warnings dist/cli.js serve",
+    "cli": "node --no-warnings dist/cli.js",
+    "demo": "node --no-warnings dist/cli.js expand 1 7 --budget 3 && node --no-warnings dist/cli.js expand 1 7 --budget 100 && node --no-warnings dist/cli.js reports && node --no-warnings dist/cli.js parse \"0.(9)\""
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "tsx": "*",
+    "typescript": "*"
+  }
+}
+
+
