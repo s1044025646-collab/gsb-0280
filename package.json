@@ -1,0 +1,20 @@
+{
+  "name": "rational-expansion",
+  "version": "1.0.0",
+  "description": "精确有理数循环小数展开与循环节定位后端（API + CLI）",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --import tsx --test test/*.test.ts",
+    "start": "node dist/cli.js serve",
+    "cli": "node dist/cli.js",
+    "demo": "node dist/cli.js demo"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "tsx": "*",
+    "typescript": "*"
+  }
+}
